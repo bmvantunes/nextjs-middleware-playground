@@ -15,5 +15,5 @@ export async function middleware(req: NextRequest, ev: NextFetchEvent) {
   JSON.stringify(req.ua),"xxxxxxxxx .text() YES",
   JSON.stringify((await req.text())));
 
-  NextResponse.next();
+  return NextResponse.next();
 }
