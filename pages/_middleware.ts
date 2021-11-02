@@ -3,6 +3,6 @@
 import type { NextFetchEvent, NextRequest } from 'next/server'
 
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
-  console.log('BRUNOOOOOOOOOOOOOOOxxx', req, ev);
-  return new Response('Hello, world!')
+  console.log('BRUNOOOOOOOOOOOOOOOxxx', req, 'xxxxxxxxxxxxx', ev);
+  return new Response('Hello, world!2')
 }
